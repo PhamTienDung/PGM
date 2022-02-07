@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DunDemo_A4_1" pageWidth="709" pageHeight="1002" columnWidth="709" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isSummaryWithPageHeaderAndFooter="true" uuid="497ee7b2-4cba-40ec-a9ea-886369367cfb">
+	<parameter name="company" class="java.lang.String"/>
+	<parameter name="price" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[$P{price}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="year" class="java.lang.Integer"/>
+	<parameter name="month" class="java.lang.Integer"/>
+	<parameter name="day" class="java.lang.Integer"/>
+	<parameter name="year1" class="java.lang.Integer"/>
+	<parameter name="month1" class="java.lang.Integer"/>
+	<parameter name="day1" class="java.lang.Integer"/>
+	<parameter name="comment" class="java.lang.String"/>
+	<parameter name="subtotaltitle" class="java.lang.String"/>
+	<parameter name="subtotal" class="java.lang.Integer"/>
+	<parameter name="taxtitle" class="java.lang.String"/>
+	<parameter name="tax" class="java.lang.Integer"/>
+	<parameter name="totaltitle" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="553" splitType="Stretch">
+			<textField>
+				<reportElement x="438" y="11" width="218" height="30" uuid="4c93b364-d62f-43f8-9e28-0f9f1edfaa61">
+					<property name="com.jaspersoft.studio.unit.x" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{company}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###;(#,##0.###-)">
+				<reportElement x="499" y="46" width="111" height="28" uuid="f746901f-df87-4870-b533-20d664b74cb9">
+					<property name="com.jaspersoft.studio.unit.y" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="88" y="349" width="34" height="25" uuid="62f69f93-4808-41d7-9c6c-29a6eb04a5e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="121" y="349" width="30" height="25" uuid="fba5b13a-7193-400e-a33f-bb90f2bdd436"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="349" width="30" height="25" uuid="5201d5a6-96d3-4a4b-a131-073df7fba1d6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="349" width="37" height="25" uuid="c1d851d3-d1e9-4439-8391-b02eefe2ac35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{year1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="349" width="31" height="25" uuid="54045301-c453-4256-b396-2af753592f3a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{month1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="349" width="25" height="25" uuid="53535db1-8aa1-4cf6-b78c-e4434b69aac1">
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{day1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="242" y="374" width="155" height="25" uuid="c67eda91-73b3-4f68-b79e-7d427d4e826c">
+					<property name="com.jaspersoft.studio.unit.x" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{comment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="374" width="50" height="25" uuid="74874653-1790-42db-8336-b46077b5dd76">
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotaltitle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###;(#,##0.###-)">
+				<reportElement x="488" y="374" width="111" height="25" uuid="da167171-8b29-40ac-ad33-9b19819ea886">
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="399" width="50" height="25" uuid="01ac7728-8775-4ca7-9351-143ee43ec045">
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{taxtitle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###;(#,##0.###-)">
+				<reportElement x="488" y="399" width="111" height="25" uuid="870f6e9d-e163-4425-babe-f53ba325f542">
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="424" width="50" height="25" uuid="ec3eb051-0585-43af-b72c-28ee9f004fb5">
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totaltitle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###;(#,##0.###-)">
+				<reportElement x="488" y="424" width="111" height="25" uuid="5b7a60fe-6b54-4224-bbac-44f6de650708">
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="MS UI Gothic" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
